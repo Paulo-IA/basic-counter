@@ -12,8 +12,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
     <script type="module" src="./src/main.js" defer></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
-    
+    <div id="app">
+        <span id="number">0</span>
+
+        <section id="buttons-wrapper">
+            <button
+                data-action="decreaseCounter"
+                class="ph ph-minus"
+            >
+                <span class="sr-only">decreases the counter by one</span>
+            </button>
+            
+            <button
+                data-action="increaseCounter"
+                class="ph ph-arrow-counter-clockwise"
+            >
+                <span class="sr-only">reset the counter</span>
+            </button>
+
+            <button
+                data-action="increaseCounter"
+                class="ph ph-plus"
+            >
+                <span class="sr-only">increases the counter by one</span>
+            </button>
+        </section>
+    </div>
 </body>
 </html>

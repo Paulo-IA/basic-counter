@@ -1,3 +1,3 @@
 import * as Counter from './Counter/index.js'
 
-Counter.start(5)
+Counter.start(0)
